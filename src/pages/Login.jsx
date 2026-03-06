@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { Link, useNavigate } from "react-router-dom"
+import './Login.css'
 
 
 
@@ -32,14 +33,16 @@ function Login() {
 
   return (
     <>
-    <h1>login</h1>
+    <h1>LOGIN</h1>
     <form onSubmit={validarLogin} >
+       <p>Login: </p>
        <input
           type="text" 
           placeholder="Login"
           value={login}
           onChange={(e) => setLogin(e.target.value)}
         /> <br /><br />
+        <p>Senha:</p>
         <input
           type="password" 
           placeholder="Senha"

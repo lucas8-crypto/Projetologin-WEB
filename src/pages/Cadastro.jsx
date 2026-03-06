@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import './Cadastro.css'
 
 function Cadastro() {
 
@@ -28,7 +29,7 @@ function Cadastro() {
 
   return (
     <div>
-      <h2>Novo Cadastro</h2>
+      <h2>NOVO CADASTRO</h2>
 
       <form onSubmit={cadastrar}>
         <input
@@ -47,6 +48,8 @@ function Cadastro() {
 
         <button type="submit">Cadastrar</button>
       </form>
+
+      <Link to={"/Login"}>Login</Link><br />
     </div>
   );
 }
